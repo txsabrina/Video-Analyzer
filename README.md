@@ -11,7 +11,7 @@ Antes de começar, certifique-se de que tenha .NET SDK
 ### Instruções
 
 1. Clone o reposi:tório
-   - Use o comando `git clone git@github.com:txsabrina/Product-Challenge.git`
+   - Use o comando `git@github.com:txsabrina/Video-Analyzer.git`
    - Entre na pasta do repositório
 2. Instale as dependências
    - Execute o comando: `dotnet restore`.
