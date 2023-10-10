@@ -1,0 +1,20 @@
+﻿@page
+@layout "_Layout"
+@model Video_Analyzer.Pages.IndexModel
+
+<h1>Video Analyzer</h1>
+@if (Model.VideoInfo != null)
+{
+    <div>
+        <h3>Informações do Vídeo:</h3>
+        <p>Duração: @Model.VideoInfo.Duration segundos</p>
+        <p>Resolução: @Model.VideoInfo.Resolution</p>
+        <p>Codec: @Model.VideoInfo.Codec</p>
+    </div>
+}
+
+<form method="post" enctype="multipart/form-data">
+    <input type="file" name="VideoFile" accept=".mp4, .avi, .mkv">
+    <button type="submit">Enviar Vídeo</button>
+</form>
+
